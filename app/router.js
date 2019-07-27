@@ -7,6 +7,11 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
+  this.route('menu', function() {
+    this.route('withdraw');
+    this.route('deposit');
+    this.route('balance');
+  });
 });
 
 export default Router;
