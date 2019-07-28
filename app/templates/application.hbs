@@ -10,15 +10,18 @@
 <!--            {{/if}}-->
 <!--        </li>-->
 <!--    </ul>-->
-<!--    <ul class="nav navbar-nav navbar-right">-->
-<!--        <li>-->
+    <ul class="nav navbar-nav navbar-right">
+        <li>
+            {{#link-to "menu.index" class ="btn btn-secondary btn-sm"}}
+                Back
+            {{/link-to}}
 <!--            {{#if loggedIn }}-->
 <!--                <button {{ action "logout" }} class="btn btn-danger log">Log out</button>-->
 <!--            {{else}}-->
 <!--                <button {{ action "login" }} class="btn btn-info log">Log In</button>-->
 <!--            {{/if}}-->
-<!--        </li>-->
-<!--    </ul>-->
+        </li>
+    </ul>
 </nav>
 
 <div class="container">
