@@ -8,7 +8,8 @@ export default Model.extend({
   address: DS.attr('string'),
   phoneNumber: DS.attr('string'),
   registeredAt: DS.attr('date'),
-  bankAccounts: DS.hasMany('bank-account'),
+  clientId: DS.attr('string'),
+  bankAccounts: DS.hasMany('account'),
   fullName: computed('fName', 'lName', function () {
     return this.get('fName') + ' ' + this.get('lName');
   })
